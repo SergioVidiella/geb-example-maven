@@ -5,7 +5,11 @@
 */
 
 import org.openqa.selenium.firefox.FirefoxDriver
+import org.openqa.selenium.remote.DesiredCapabilities
+import org.openqa.selenium.remote.RemoteWebDriver
 
-driver = { new FirefoxDriver() }
+driver = {
+            new RemoteWebDriver(new URL("http://windows.ci-server.local"), DesiredCapabilities.Firefox())
+        }
 
 baseUrl = "http://gebish.org"
