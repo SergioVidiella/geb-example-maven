@@ -9,7 +9,7 @@ import org.openqa.selenium.remote.DesiredCapabilities
 import org.openqa.selenium.remote.RemoteWebDriver
 
 driver = {
-            new RemoteWebDriver(new URL("http://172.20.15.72:4444/wd/hub"), DesiredCapabilities.Firefox())
+            new RemoteWebDriver(new URL("http://172.20.15.72:4444/wd/hub"), DesiredCapabilities.firefox())
         }
 
 baseUrl = "http://gebish.org"
